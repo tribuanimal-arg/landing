@@ -1,0 +1,73 @@
+{
+  "escuela_canina": {
+    "modalidades": [
+      {
+        "tipo": "Online",
+        "precio": 80000,
+        "precio_individual": 80000,
+        "horario": "Martes 19hs",
+        "ubicacion": "Virtual",
+        "duracion": "60min aprox",
+        "incluye": ""
+      },
+      {
+        "tipo": "Presencial",
+        "precio": 120000,
+        "precio_individual": 120000,
+        "horario": "S?bados 10hs",
+        "ubicacion": "Agronom?a",
+        "duracion": "60min aprox",
+        "incluye": ""
+      }
+    ]
+  },
+  "socializacion": {
+    "modalidades": [
+      {
+        "tipo": "Presencial",
+        "precio": 40000,
+        "precio_individual": 40000,
+        "cantidad_pack": 4,
+        "descuento_porcentaje": 25,
+        "horario": "Domingos 10hs",
+        "ubicacion": "Saavedra",
+        "duracion": "60min aprox",
+        "incluye": ""
+      }
+    ]
+  },
+  "clases_individuales": {
+    "modalidades": [
+      {
+        "tipo": "Online",
+        "precio": 40000,
+        "precio_individual": 40000,
+        "cantidad_pack": 4,
+        "descuento_porcentaje": 18.75,
+        "horario": "",
+        "ubicacion": "",
+        "duracion": "60min aprox",
+        "incluye": "WhatsApp 24/7"
+      },
+      {
+        "tipo": "Presencial",
+        "precio": 75000,
+        "precio_individual": 75000,
+        "cantidad_pack": 4,
+        "descuento_porcentaje": 6.66666667,
+        "horario": "",
+        "ubicacion": "",
+        "duracion": "60min aprox",
+        "incluye": "WhatsApp 24/7"
+      }
+    ]
+  },
+  "configuracion": {
+    "descuento_multiples_perros": 30,
+    "edad_minima_tutor": 18,
+    "proximas_plazas": [
+      "Parque Los Andes",
+      "Plaza 25 de Agosto"
+    ]
+  }
+}
