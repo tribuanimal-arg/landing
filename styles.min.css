@@ -692,9 +692,20 @@ footer {
   position: relative;
   transition: all 0.3s ease;
 }
-.radio-option input[type="radio"]:checked .radio-custom {
+.radio-option input[type="radio"]:checked + .radio-custom {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
+}
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
 }
 .radio-text {
   font-size: 0.95rem;
@@ -728,11 +739,11 @@ footer {
   position: relative;
   transition: all 0.3s ease;
 }
-.checkbox-option input[type="checkbox"]:checked .checkbox-custom {
+.checkbox-option input[type="checkbox"]:checked + .checkbox-custom {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
 }
-.checkbox-option input[type="checkbox"]:checked .checkbox-custom::after {
+.checkbox-option input[type="checkbox"]:checked + .checkbox-custom::after {
   content: "✓";
   position: absolute;
   top: 50%;
@@ -3578,6 +3589,11 @@ body.modal-open {
 [data-theme="dark"] .feature-item span {
   color: var(--text-dark);
 }
+
+[data-theme="dark"] .feature-item {
+  background: transparent;
+}
+
 [data-theme="dark"] .feature-item .icon i {
   color: var(--success-color);
 }
@@ -3591,6 +3607,10 @@ body.modal-open {
   color: var(--primary-color);
 }
 @media (prefers-color-scheme: dark) {
+  .feature-item {
+    background: transparent;
+  }
+
   .feature-item span {
     color: var(--text-dark);
   }
