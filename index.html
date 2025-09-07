@@ -2051,20 +2051,25 @@
 
           <form class="tribu-form">
             <input type="hidden" name="formType" value="sumarse_tribu" />
-            <input
-              type="hidden"
-              name="motivo_contacto"
-              value="Inscripción TRIBU"
-            />
 
             <div class="form-row">
               <div class="form-group">
                 <label for="tribu-nombre">Nombre y Apellido Completo *</label>
-                <input type="text" id="tribu-nombre" name="nombre" required />
+                <input
+                  type="text"
+                  id="tribu-nombre"
+                  name="tribu-nombre"
+                  required
+                />
               </div>
               <div class="form-group">
                 <label for="tribu-email">Email *</label>
-                <input type="email" id="tribu-email" name="email" required />
+                <input
+                  type="email"
+                  id="tribu-email"
+                  name="tribu-email"
+                  required
+                />
               </div>
             </div>
 
@@ -2074,7 +2079,7 @@
                 <input
                   type="tel"
                   id="tribu-telefono"
-                  name="telefono"
+                  name="tribu-telefono"
                   placeholder="+54 9 11 1234-5678"
                   required
                 />
@@ -2086,7 +2091,7 @@
                 <input
                   type="text"
                   id="tribu-ubicacion"
-                  name="ubicacion"
+                  name="tribu-ubicacion"
                   placeholder="Buenos Aires, CABA"
                   required
                 />
@@ -2097,7 +2102,7 @@
               <label for="tribu-experiencia"
                 >Años de experiencia en educación canina *</label
               >
-              <select id="tribu-experiencia" name="experiencia" required>
+              <select id="tribu-experiencia" name="tribu-experiencia" required>
                 <option value="">Seleccionar</option>
                 <option value="menos-1">Menos de 1 año</option>
                 <option value="1-2">1-2 años</option>
@@ -2113,7 +2118,7 @@
               >
               <textarea
                 id="tribu-certificaciones"
-                name="certificaciones"
+                name="tribu-certificaciones"
                 rows="3"
                 placeholder="Describe tus certificaciones, cursos, formación académica relacionada con educación canina..."
                 required
@@ -2126,7 +2131,7 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="metodologia"
+                    name="tribu-metodologia"
                     value="refuerzo-positivo"
                   />
                   <span class="checkbox-custom"></span>
@@ -2135,7 +2140,7 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="metodologia"
+                    name="tribu-metodologia"
                     value="condicionamiento-clasico"
                   />
                   <span class="checkbox-custom"></span>
@@ -2144,14 +2149,18 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="metodologia"
+                    name="tribu-metodologia"
                     value="entrenamiento-funcional"
                   />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Entrenamiento funcional</span>
                 </label>
                 <label class="checkbox-option">
-                  <input type="checkbox" name="metodologia" value="otras" />
+                  <input
+                    type="checkbox"
+                    name="tribu-metodologia"
+                    value="otras"
+                  />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Otras metodologías</span>
                 </label>
@@ -2166,7 +2175,7 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="servicios"
+                    name="tribu-servicios"
                     value="clases-individuales"
                   />
                   <span class="checkbox-custom"></span>
@@ -2175,7 +2184,7 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="servicios"
+                    name="tribu-servicios"
                     value="clases-grupales"
                   />
                   <span class="checkbox-custom"></span>
@@ -2184,14 +2193,18 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="servicios"
+                    name="tribu-servicios"
                     value="consultas-comportamiento"
                   />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Consultas de comportamiento</span>
                 </label>
                 <label class="checkbox-option">
-                  <input type="checkbox" name="servicios" value="talleres" />
+                  <input
+                    type="checkbox"
+                    name="tribu-servicios"
+                    value="talleres"
+                  />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Talleres y seminarios</span>
                 </label>
@@ -2204,7 +2217,7 @@
               >
               <textarea
                 id="tribu-motivacion"
-                name="motivacion"
+                name="tribu-motivacion"
                 rows="4"
                 placeholder="Contanos qué te motiva a unirte a nuestra red de profesionales y qué esperás obtener de esta experiencia..."
                 required
@@ -2217,21 +2230,25 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="disponibilidad"
+                    name="tribu-disponibilidad"
                     value="mananas"
                   />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Mañanas</span>
                 </label>
                 <label class="checkbox-option">
-                  <input type="checkbox" name="disponibilidad" value="tardes" />
+                  <input
+                    type="checkbox"
+                    name="tribu-disponibilidad"
+                    value="tardes"
+                  />
                   <span class="checkbox-custom"></span>
                   <span class="checkbox-text">Tardes</span>
                 </label>
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="disponibilidad"
+                    name="tribu-disponibilidad"
                     value="fines-semana"
                   />
                   <span class="checkbox-custom"></span>
@@ -2240,7 +2257,7 @@
                 <label class="checkbox-option">
                   <input
                     type="checkbox"
-                    name="disponibilidad"
+                    name="tribu-disponibilidad"
                     value="flexible"
                   />
                   <span class="checkbox-custom"></span>
@@ -2291,12 +2308,22 @@
 
             <div class="form-group">
               <label for="sedes-nombre">Nombre completo *</label>
-              <input type="text" id="sedes-nombre" name="nombre" required />
+              <input
+                type="text"
+                id="sedes-nombre"
+                name="sedes-nombre"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="sedes-email">Email *</label>
-              <input type="email" id="sedes-email" name="email" required />
+              <input
+                type="email"
+                id="sedes-email"
+                name="sedes-email"
+                required
+              />
             </div>
 
             <div class="form-group">
@@ -2304,7 +2331,7 @@
               <input
                 type="tel"
                 id="sedes-telefono"
-                name="telefono"
+                name="sedes-telefono"
                 placeholder="+54 9 11 1234-5678"
                 required
               />
@@ -2312,7 +2339,7 @@
 
             <div class="form-group">
               <label for="sedes-ubicacion">Sede de interés</label>
-              <select id="sedes-ubicacion" name="sede_interes">
+              <select id="sedes-ubicacion" name="sedes-ubicacion">
                 <option value="">Seleccionar Sede</option>
               </select>
             </div>
