@@ -669,7 +669,7 @@ function renderIndividualesPrices(modalidades) {
           </div>
         </div>
         <div class="includes-individual-mobile">
-          <i class="fas fa-whatsapp"></i>
+          <i class="fab fa-whatsapp"></i>
           <span>${modalidad.incluye}</span>
         </div>
         ${
@@ -765,7 +765,7 @@ function renderIndividualesDesktop(modalidades) {
               </div>
             </div>
             <p class="includes-individual">
-              <i class="fas fa-whatsapp"></i>
+              <i class="fab fa-whatsapp"></i>
               ${modalidad.incluye}
             </p>
             ${

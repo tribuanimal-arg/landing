@@ -4736,6 +4736,15 @@ footer a:hover {
   color: var(--text-dark);
   border-left: 3px solid var(--secondary-color);
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.includes-individual i {
+  color: #25d366;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 /* ========================================
