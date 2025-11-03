@@ -2,6 +2,6 @@ User-agent: BadBot
 Disallow: /
 
 User-agent: *
-Disallow:
+Disallow: /cdn-cgi/
 
-Sitemap: https://tribuanimal.com.ar/sitemap.xml
+Sitemap: https://www.tribuanimal.com.ar/sitemap.xml

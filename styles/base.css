@@ -1,0 +1,103 @@
+/* Base styles and CSS Variables */
+
+:root {
+  --primary-color: #e67e22;
+  --secondary-color: #d35400;
+  --accent-color: #d4d6c0;
+  --sage-green: #a8b5a0;
+  --warm-beige: #f5f3e9;
+  --text-dark: #2c3e21;
+  --text-light: #5a6b4f;
+  --bg-light: #f5f3e9;
+  --bg-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar when using anchor links */
+section {
+  scroll-margin-top: 80px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Specific fixes for common overflow causes */
+img,
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Common button styles */
+.btn-primary,
+.btn-secondary {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--text-dark);
+  color: white;
+}
+
+/* Common icon styles */
+.icon {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,604 @@
+/* Responsive Design */
+
+/* Desktop/Mobile visibility classes */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-nav-link {
+    display: block;
+}
+
+.mobile-nav-link {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Toggle desktop/mobile sections */
+    .desktop-only {
+        display: none !important;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+    
+    /* Toggle navigation links */
+    .desktop-nav-link {
+        display: none;
+    }
+    
+    .mobile-nav-link {
+        display: block;
+    }
+    /* Mobile Navigation */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: left 0.3s ease;
+        padding-top: 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        margin: 0;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a:hover {
+        background-color: #f8f9fa;
+        color: var(--primary-color);
+    }
+
+    /* Dark mode improvements for mobile navbar */
+    [data-theme="dark"] .nav-links {
+        background: var(--bg-white);
+        border-top: 1px solid var(--border-color);
+    }
+
+    [data-theme="dark"] .nav-links a {
+        color: var(--text-dark);
+        border-bottom-color: var(--border-color);
+    }
+
+    [data-theme="dark"] .nav-links a:hover {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+    }
+
+    [data-theme="dark"] .hamburger-line {
+        background-color: var(--text-dark);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .nav-links {
+            background: var(--bg-white);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            border-bottom-color: var(--border-color);
+        }
+
+        .nav-links a:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .hamburger-line {
+            background-color: var(--text-dark);
+        }
+    }
+
+    /* Theme toggle improvements for mobile */
+    [data-theme="dark"] .theme-toggle {
+        background: var(--accent-color);
+        border-color: var(--border-color);
+        color: var(--text-dark);
+    }
+
+    [data-theme="dark"] .theme-toggle:hover {
+        background: var(--primary-color);
+        color: var(--bg-white);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .theme-toggle {
+            background: var(--accent-color);
+            border-color: var(--border-color);
+            color: var(--text-dark);
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary-color);
+            color: var(--bg-white);
+        }
+    }
+
+    /* Mobile navbar shadow enhancement in dark mode */
+    [data-theme="dark"] .nav-links {
+        box-shadow: 0 2px 20px var(--shadow-medium);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .nav-links {
+            box-shadow: 0 2px 20px var(--shadow-medium);
+        }
+    }
+
+    /* Hamburger active state improvements for dark mode */
+    [data-theme="dark"] .hamburger.active .hamburger-line {
+        background-color: var(--primary-color);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .hamburger.active .hamburger-line {
+            background-color: var(--primary-color);
+        }
+    }
+
+    /* Smooth transitions for mobile menu elements */
+    .nav-links a {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hamburger {
+        transition: all 0.3s ease;
+    }
+
+    .hamburger:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+    .hamburger:active {
+        transform: scale(0.95);
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .before-after-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .guarantee-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card.featured {
+        transform: none;
+    }
+    
+    .result-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .result-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .result-item:nth-child(even) .result-media,
+    .result-item:nth-child(even) .result-info {
+        order: initial;
+    }
+    
+    .instagram-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        padding: 0 10px;
+    }
+    
+    .instagram-media {
+        width: 100% !important;
+        max-width: calc(100vw - 40px) !important;
+        min-width: 280px !important;
+    }
+    
+    .instagram-post {
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-primary, .btn-secondary {
+        text-align: center;
+    }
+    
+    .instagram-feed h2 {
+        font-size: 2rem;
+    }
+    
+    .instagram-subtitle {
+        font-size: 1rem;
+    }
+    
+    .instagram-media {
+        width: 100% !important;
+        max-width: calc(100vw - 30px) !important;
+        min-width: 260px !important;
+    }
+    
+    .instagram-gallery {
+        gap: 0.5rem;
+        padding: 0 5px;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .result-card {
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .academia-features,
+    .tribu-benefits {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .academia-cta,
+    .tribu-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .academia-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .tribu-requirements {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .process-steps {
+        gap: 0.5rem;
+    }
+    
+    .process-step {
+        padding: 0.75rem;
+    }
+    
+    .evaluation-info,
+    .process-info {
+        margin: 1rem 0;
+    }
+    
+    .evaluation-info {
+        padding: 1rem;
+    }
+    
+    .info-section {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    
+    .important-notice {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .important-notice h2 {
+        font-size: 1.2rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-header {
+        padding: 1rem 1.5rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+        max-height: calc(90vh - 120px);
+    }
+    
+    .modal-body iframe {
+        height: 400px;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .modal-actions .btn-primary,
+    .modal-actions .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* TRIBU Form specific styles for mobile */
+    .tribu-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .tribu-form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .tribu-form .checkbox-group {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .tribu-form .checkbox-option {
+        padding: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tribu-form textarea {
+        min-height: 80px;
+    }
+
+    .tribu-form select,
+    .tribu-form input[type="text"],
+    .tribu-form input[type="email"],
+    .tribu-form input[type="tel"] {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 0.75rem;
+    }
+
+    .tribu-form .btn-primary {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .tribu-form .form-disclaimer {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-top: 1rem;
+    }
+}
+
+/* Tablet specific styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .modal-content {
+        width: 85%;
+        margin: 3% auto;
+    }
+
+    .modal-header {
+        padding: 1.25rem 1.75rem;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+        max-height: calc(90vh - 130px);
+    }
+
+    /* TRIBU Form tablet styles */
+    .tribu-form .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .tribu-form .checkbox-group {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .tribu-form .checkbox-option {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .tribu-form select,
+    .tribu-form input[type="text"],
+    .tribu-form input[type="email"],
+    .tribu-form input[type="tel"] {
+        padding: 0.625rem;
+    }
+
+    .tribu-form .btn-primary {
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Results section consistency for tablet */
+    .result-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .result-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .result-item:nth-child(even) .result-media,
+    .result-item:nth-child(even) .result-info {
+        order: initial;
+    }
+}
+
+/* Very small screens (320px - 480px) */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        margin: 2% auto;
+        border-radius: 8px;
+    }
+
+    .modal-header {
+        padding: 1rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .modal-header h2 {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+
+    .modal-body {
+        padding: 0.75rem;
+        max-height: calc(95vh - 100px);
+    }
+
+    .modal-intro p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    /* TRIBU Form very small screens */
+    .tribu-form label {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .tribu-form .checkbox-option {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .tribu-form .checkbox-text {
+        line-height: 1.3;
+    }
+
+    .tribu-form textarea {
+        min-height: 70px;
+        resize: vertical;
+    }
+
+    /* Results consistency for very small screens */
+    .result-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .result-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .result-item:nth-child(even) .result-media,
+    .result-item:nth-child(even) .result-info {
+        order: initial;
+    }
+
+    .media-placeholder {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .placeholder-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Mobile Navigation adjustments for very small screens */
+    .nav-links {
+        top: 60px;
+        height: calc(100vh - 60px);
+        padding-top: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        padding: 0.75rem 0;
+    }
+
+    /* Scroll to top button adjustments for small screens */
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+}
