@@ -151,11 +151,11 @@
     <!-- CSS Minificado con Preload -->
     <link
       rel="preload"
-      href="styles.min.css"
+      href="styles.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="styles.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
 
     <!-- Preload critical images -->
     <link rel="preload" href="assets/logo.png" as="image" />
@@ -225,6 +225,7 @@
             <!-- Common navigation -->
             <a href="#bio" onclick="closeMobileMenu()">Sobre Melina</a>
             <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+            <a href="https://tribuanimal.empretienda.com.ar/" target="_blank" rel="noopener noreferrer" onclick="closeMobileMenu()">Tienda</a>
             <button
               class="theme-toggle"
               id="theme-toggle"
@@ -2360,7 +2361,30 @@
       </div>
     </div>
 
+    <!-- Cyber Monday Popup -->
+    <div id="cyberMondayModal" class="modal cyber-modal">
+      <span class="modal-close cyber-close" onclick="closeCyberModal()">&times;</span>
+      <div class="modal-content cyber-modal-content">
+        <div class="cyber-modal-body">
+          <div class="cyber-icon">🎉</div>
+          <h2 class="cyber-title">¡CYBER MONDAY!</h2>
+          <p class="cyber-subtitle">Oferta Exclusiva</p>
+          <div class="cyber-discount">
+            <span class="cyber-percentage">50%</span>
+            <span class="cyber-off">OFF</span>
+          </div>
+          <p class="cyber-description">
+            En todo nuestro catálogo de clases y servicios
+          </p>
+          <a href="https://tribuanimal.empretienda.com.ar/" target="_blank" rel="noopener noreferrer" class="btn-primary cyber-cta" onclick="closeCyberModal()">
+            ¡Aprovechá ahora!
+          </a>
+          <p class="cyber-note">*Válido solo por tiempo limitado</p>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript -->
-    <script src="scripts.min.js" defer></script>
+    <script src="scripts.js" defer></script>
   </body>
 </html>
