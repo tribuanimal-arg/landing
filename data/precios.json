@@ -3,73 +3,68 @@
     "modalidades": [
       {
         "tipo": "Online",
-        "precio": 90000,
-        "precio_individual": 22500,
-        "horario": "Martes 19hs",
+        "precio": 80000,
+        "precio_individual": 80000,
+        "horario": "Jueves 19hs",
         "ubicacion": "Virtual",
         "duracion": "60min aprox",
-        "incluye": "",
-        "link_tienda": "https://tribuanimal.empretienda.com.ar/escuelita-canina/clases-grupales-virtual"
+        "incluye": ""
       },
       {
         "tipo": "Presencial",
-        "precio": 120000,
-        "precio_individual": 30000,
-        "horario": "Sábados 10hs",
-        "ubicacion": "Agronomía",
+        "precio": 150000,
+        "precio_individual": 150000,
+        "horario": "Domingos 10hs",
+        "ubicacion": "Agronom?a",
         "duracion": "60min aprox",
-        "incluye": "",
-        "link_tienda": "https://tribuanimal.empretienda.com.ar/escuelita-canina/clases-grupales-presencial"
+        "incluye": ""
+      },
+      {
+        "tipo": "Presencial",
+        "precio": 150000,
+        "precio_individual": 150000,
+        "horario": "Domingos 10hs",
+        "ubicacion": "Lugano",
+        "duracion": "60min aprox",
+        "incluye": ""
       }
     ]
   },
   "socializacion": {
-    "modalidades": [
-      {
-        "tipo": "Presencial",
-        "precio": 50000,
-        "precio_individual": 50000,
-        "cantidad_pack": 4,
-        "descuento_porcentaje": 25,
-        "horario": "Domingos 10hs",
-        "ubicacion": "Saavedra",
-        "duracion": "60min aprox",
-        "incluye": "",
-        "link_tienda": "https://tribuanimal.empretienda.com.ar/escuelita-canina/clases-de-socializacion-reactividad-0"
-      }
-    ]
+    "modalidades": []
   },
   "clases_individuales": {
     "modalidades": [
       {
         "tipo": "Online",
-        "precio": 50000,
-        "precio_individual": 50000,
+        "precio": 70000,
+        "precio_individual": 70000,
         "cantidad_pack": 4,
-        "descuento_porcentaje": 10,
+        "descuento_porcentaje": 28.57143,
         "horario": "",
         "ubicacion": "",
         "duracion": "60min aprox",
-        "incluye": "WhatsApp 24/7",
-        "link_tienda": "https://tribuanimal.empretienda.com.ar/escuelita-canina/clases-individuales-virtual"
+        "incluye": "WhatsApp 24/7"
       },
       {
         "tipo": "Presencial",
-        "precio": 90000,
-        "precio_individual": 90000,
+        "precio": 120000,
+        "precio_individual": 120000,
         "cantidad_pack": 4,
-        "descuento_porcentaje": 11.1111,
+        "descuento_porcentaje": 27.083333,
         "horario": "",
         "ubicacion": "",
         "duracion": "60min aprox",
-        "incluye": "WhatsApp 24/7",
-        "link_tienda": "https://tribuanimal.empretienda.com.ar/escuelita-canina/clases-individuales-presencial"
+        "incluye": "WhatsApp 24/7"
       }
     ]
   },
   "configuracion": {
     "descuento_multiples_perros": 30,
     "edad_minima_tutor": 18,
-    "proximas_plazas": ["Parque Los Andes", "Plaza 25 de Agosto"]
+    "proximas_plazas": [
+      "Parque Los Andes",
+      "Plaza 25 de Agosto"
+    ]
   }
 }
